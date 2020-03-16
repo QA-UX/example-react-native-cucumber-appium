@@ -19,10 +19,6 @@ Before({timeout: 50000}, async () => {
   await driver.sleep(6000); // wait for app to load
 });
 
-After(async() => {
-	await driver.quit();
-});
-
 Given ('I am in app home page', {timeout: 30000}, async () => {
   let isWelcomeMessage = await driver.hasElementByXPath("//*[@text='App to showcase']");
   assert.equal(isWelcomeMessage, true);

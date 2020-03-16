@@ -44,7 +44,7 @@ class FloatingLabel extends Component {
               <Input secureTextEntry />
             </Item>
           </Form>
-          <Button block style={{ margin: 15, marginTop: 50 }}>
+          <Button block style={{ margin: 15, marginTop: 50 }} accessibilityLabel="button-save">
             <Text>Sign In</Text>
           </Button>
         </Content>
