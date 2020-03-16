@@ -9,7 +9,7 @@ const config = {
   deviceName: 'pixel_2',
   app: './android/app/build/outputs/apk/debug/app-debug.apk', // relative to root of project
   appPackage: 'com.nativebasekitchensink',
-  appActivity: 'com.nativebasekitchensink.MainActivity',
+  appActivity: '.MainActivity',
   automationName: 'uiautomator2' 
 };
 const driver = wd.promiseChainRemote('localhost', PORT);
@@ -24,17 +24,17 @@ After(async() => {
 });
 
 Given ('I am in app home page', {timeout: 30000}, async () => {
-  let isWelcomeMessage = await driver.hasElementByAccessibilityId("welcome-message");
+  let isWelcomeMessage = await driver.hasElementByXPath("//*[@text='App to showcase']");
   assert.equal(isWelcomeMessage, true);
 });
 
-When ('I click on "Pressione" button', async () => {
-  let loginButton = await driver.elementByAccessibilityId("press-button");
+When ('I click on "Lets Go!" button', async () => {
+  let loginButton = await driver.elementByAccessibilityId("button-home");
   loginButton.click();
 });
 
-Then ('I see the alert', {timeout: 2000}, async () => {
-  await driver.setImplicitWaitTimeout(1500);
-  let isAlert = await driver.hasElementByXPath("//*[@text='Você apertou o botão']");
+Then ('I see the home page', {timeout: 5000}, async () => {
+  await driver.setImplicitWaitTimeout(5000);
+  let isAlert = await driver.hasElementByXPath("//*[@text='Header']");
   assert.equal(isAlert, true);
 });

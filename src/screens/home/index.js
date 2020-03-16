@@ -30,6 +30,7 @@ class Home extends Component {
           </View>
           <View style={{ marginBottom: 80 }}>
             <Button
+              accessibilityLabel="button-home"
               style={{ backgroundColor: "#6FAF98", alignSelf: "center" }}
               onPress={() => this.props.navigation.openDrawer()}
             >

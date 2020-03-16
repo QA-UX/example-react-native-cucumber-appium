@@ -1,6 +1,6 @@
 # Exemplo React Native + Appium + Cucumber
 
-Este repositório tem como objetivo demonstrar o funcionamento da ferramenta de teste *end-to-end* DetoxJS para teste em aplicativos mobiles.
+Este repositório tem como objetivo demonstrar o funcionamento da ferramenta de teste *end-to-end* Appium + Cucumber para teste em aplicativos mobiles.
 
 ## Configuração do projeto.
 
@@ -97,12 +97,11 @@ O React Native é um projeto desenvolvido pelos engenheiros do Facebook e que co
 O stack do React Native é poderoso, pois nos permite utilizar ECMAScript 6, CSS Flexbox, JSX, diversos pacotes do NPM e muito mais. Sem contar que nos permite fazer debug na mesma IDE utilizada para o desenvolvimento nativo com essas plataformas (além de tornar o processo extremamente divertido).
 
 
-## DetoxJS 
+## Cucumber
 
-O desenvolvimento mobile, exige que adotemos fluxos de trabalho de integração contínua, na qual tenhamos uma confiança total na qualidade do software que está sendo entregue para o cliente. O Detox testa o aplicativo móvel enquanto ele é executado em dispositivo/simulador, realizando interações com a aplicação como um usuário real.
+## Appium
 
 ### Referências.
 
 * [React Native](https://facebook.github.io/react-native/docs/getting-started.html).
 * [Android Studio](https://developer.android.com/studio/index.html).
-* [DetoxJS](https://github.com/wix/Detox). 
