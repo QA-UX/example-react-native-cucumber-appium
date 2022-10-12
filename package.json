@@ -3,7 +3,7 @@
   "version": "2.12.0",
   "private": true,
   "devDependencies": {
-    "appium": "^1.17.0",
+    "appium": "^1.22.3",
     "appium-doctor": "^1.13.0",
     "babel-eslint": "7.2.3",
     "cucumber": "^6.0.5",
